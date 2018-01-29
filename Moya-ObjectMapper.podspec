@@ -3,6 +3,7 @@ Pod::Spec.new do |s|
   s.version      = "2.5"
   s.summary      = "ObjectMapper bindings for Moya"
   s.description  = <<-EOS
+  CUSTOM BUILD: UPDATING MOYA AND OBJECTMAPPER VERSIONS ON PODSPEC
   [ObjectMapper](https://github.com/Hearst-DD/ObjectMapper) bindings for
   [Moya](https://github.com/Moya/Moya) for easier JSON serialization.
   Includes [RxSwift](https://github.com/ReactiveX/RxSwift/) bindings as well.
@@ -22,8 +23,8 @@ Pod::Spec.new do |s|
 
   s.subspec "Core" do |ss|
     ss.source_files  = "Source/*.swift"
-    ss.dependency "Moya", '~> 10.0.0'
-    ss.dependency "ObjectMapper", '~> 3.0.0'
+    ss.dependency "Moya", '~> 10.0.1'
+    ss.dependency "ObjectMapper", '~> 3.1.0'
     ss.framework  = "Foundation"
   end
 
@@ -31,7 +32,7 @@ Pod::Spec.new do |s|
     ss.source_files = "Source/RxSwift/*.swift"
     ss.dependency "Moya/RxSwift"
     ss.dependency "Moya-ObjectMapper/Core"
-    ss.dependency "RxSwift", '~> 4.0.0'
+    ss.dependency "RxSwift", '~> 4.1.1'
   end
 
   s.subspec "ReactiveSwift" do |ss|
